@@ -6,6 +6,7 @@
 - i used sysfs directly and i don't rely on external lib like "gpiod".
 - [you can see from logic analyzer pic the loggling sequence.](Blink_Led/2.png) 
 - [output.](Blink_Led/1.png)
+- [use Gpiod lib source code.](Blink_Led/Blink_Led_Gpiod.cpp)
 
 ### [Qt integration with RPI]
 -
