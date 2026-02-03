@@ -7,6 +7,7 @@
 - [you can see from logic analyzer pic the loggling sequence.](Blink_Led/2.png) 
 - [output.](Blink_Led/1.png)
 - [use Gpiod lib source code.](Blink_Led/Blink_Led_Gpiod.cpp)
+- [Write the BlinkLed app in python.](Blink_Led/Blink_Led_Gpiod.py)
 
 ### [Qt integration with RPI]
 -
