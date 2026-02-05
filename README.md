@@ -1,7 +1,7 @@
 # Embedded-Linux-Projects
 ---
 
-### [Blink_Led](Blink_Led/BlinkLed.cpp)
+### [Blink_Led](Blink_Led/)
 - the Led on physical pin 16 "gpio 23" is toggling every half second.
 - i used sysfs directly and i don't rely on external lib like "gpiod".
 - [you can see from logic analyzer pic the loggling sequence.](Blink_Led/2.png) 
@@ -9,6 +9,9 @@
 - [use Gpiod lib source code.](Blink_Led/Blink_Led_Gpiod.cpp)
 - [Write the BlinkLed app in python.](Blink_Led/Blink_Led_Gpiod.py)
 
+### PWM_App
+ - [in this app i used Hardware PWM " PWM0 " module physical pin number "18,12" these two pins are wired to same PWM module.](PWM/Led_Control_PWM_Hardware.cpp)
+ - [i used as well gpiod  lib to implement PWM concept on gpio pins. physical pin number "16" on board.](PWM/Led_Control_gpio.cpp)
+
 ### [Qt integration with RPI]
 -
-
