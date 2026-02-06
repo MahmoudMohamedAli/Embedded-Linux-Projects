@@ -16,6 +16,7 @@
 
 ### UART_App
  -[communicate with Raspi over Uart protocol](UART_APP/uart_comm.cpp).
- 
+ -[Uart App that uses two different thread one for Rx and other for Tx](UART_APP/uart_TXWorker_RXWorker.cpp).
+
 ### [Qt integration with RPI]
 -
