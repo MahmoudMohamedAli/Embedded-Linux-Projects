@@ -14,5 +14,8 @@
  - [i used as well gpiod  lib to implement PWM concept on gpio pins. physical pin number "16" on board.](PWM/Led_Control_gpio.cpp)
  - [i wrote service that start app at boot of Linux](PWM/pwm-led.service)
 
+### UART_App
+ -[communicate with Raspi over Uart protocol](UART_APP/uart_comm.cpp).
+ 
 ### [Qt integration with RPI]
 -
