@@ -17,8 +17,10 @@
 ### UART_App
  - [communicate with Raspi over Uart protocol](UART_APP/uart_comm.cpp)
  - [Uart App that uses two different thread one for Rx and other for Tx](UART_APP/uart_TXWorker_RXWorker.cpp).
- - [this App control led behavior vai UART "Turn on / turn off / Toggle".](UART_APP/Control_Led_Via_UART.cpp).
- - [Image that show the output of controlling Led](UART_APP/1.png) 
+ - [this App control led behavior vai UART "Turn on / turn off / Toggle.](UART_APP/Control_Led_Via_UART.cpp).
+ - the serial app that use to send Data i created it using QT framework.
+ - [Here is the link of the source code of Serial app using Qt v6 Framework](https://github.com/MahmoudMohamedAli/Serial_App_QT/tree/main/Version1)
+ - [Image that show the out of controlling Led](UART_APP/1.png) 
 
 ### [Qt integration with RPI]
 -
