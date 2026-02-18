@@ -17,10 +17,10 @@
 
 - [Overview](#overview)
 - [Projects](#projects)
-  - [ Blink LED](#-blink-led)
-  - [ PWM Control](#️-pwm-control)
-  - [ UART Communication](#-uart-communication)
-  - [ Qt Integration](#️-qt-integration)
+  - [ Blink LED](#1-blink-led)
+  - [ PWM Control](#2-pwm-control)
+  - [ UART Communication](#3-uart-communication)
+  - [ Qt Integration](#4-qt-integration)
 - [Hardware Requirements](#hardware-requirements)
 - [Getting Started](#getting-started)
 
@@ -48,17 +48,13 @@ LED on GPIO 23 toggles every 500ms using C++ (`libgpiod`), Python, or direct sys
 
 > Hardware and software PWM implementations for LED brightness control.
 
-| File                                                               | Description                                  |
-| ------------------------------------------------------------------ | -------------------------------------------- |
-| [`Led_Control_PWM_Hardware.cpp`](PWM/Led_Control_PWM_Hardware.cpp) | Hardware PWM using PWM0 module (pins 18, 12) |
-| [`Led_Control_gpio.cpp`](PWM/Led_Control_gpio.cpp)                 | Software PWM using `libgpiod` (pin 16)       |
-| [`pwm-led.service`](PWM/pwm-led.service)                           | Systemd service for auto-start at boot       |
+Control LED brightness using hardware PWM (sysfs) or software PWM (libgpiod).
 
-**Features:**
-
-- **Hardware PWM**: Uses the Raspberry Pi's dedicated PWM0 module
+- **Hardware PWM**: Uses the Raspberry Pi's dedicated PWM0 module (sysfs)
 - **Software PWM**: GPIO-based PWM implementation with `libgpiod`
 - **Boot Service**: Includes a systemd service file for automatic startup
+
+📁 [**View Project Details →**](PWM/README.md)
 
 ---
 
@@ -66,36 +62,24 @@ LED on GPIO 23 toggles every 500ms using C++ (`libgpiod`), Python, or direct sys
 
 > Serial communication applications for Raspberry Pi.
 
-| File                                                                | Description                                  |
-| ------------------------------------------------------------------- | -------------------------------------------- |
-| [`uart_comm.cpp`](UART_APP/uart_comm.cpp)                           | Basic UART communication                     |
-| [`uart_TXWorker_RXWorker.cpp`](UART_APP/uart_TXWorker_RXWorker.cpp) | Multi-threaded UART (separate TX/RX threads) |
-| [`Control_Led_Via_UART.cpp`](UART_APP/Control_Led_Via_UART.cpp)     | LED control via UART commands                |
+Three examples of serial communication implementation:
 
-**Features:**
+- **Basic UART**: Simple loopback and data transmission test
+- **Threaded UART**: Multi-threaded TX/RX implementation for full-duplex communication
+- **LED Control**: Control an LED via serial commands (`ON`, `OFF`, `TOGGLE`)
+  **Companion Application:**
 
-- Basic serial communication with Raspberry Pi
-- Multi-threaded design with dedicated TX and RX workers
-- Remote LED control commands: `ON` | `OFF` | `TOGGLE`
+A Qt6-based serial terminal application is available for sending commands: [Serial App (Qt6 Framework)](https://github.com/MahmoudMohamedAli/Serial_App_QT/tree/main/Version1)
 
-**Companion Application:**
-
-A Qt6-based serial terminal application is available for sending commands:
-
-🔗 [Serial App (Qt6 Framework)](https://github.com/MahmoudMohamedAli/Serial_App_QT/tree/main/Version1)
-
-**Demo:**
-| LED Control via UART |
-|:--------------------:|
-| ![UART Demo](UART_APP/1.png) |
+📁 [**View Project Details →**](UART_APP/README.md)
 
 ---
 
-### 🖥️ Qt Integration
+### 4. Qt Integration
 
 > Integrating Qt framework with Raspberry Pi for GUI applications.
 
-🚧 **Coming Soon** - Stay tuned for Qt-based embedded GUI projects!
+**Coming Soon !** - Stay tuned for Qt-based embedded GUI projects!
 
 ---
 
